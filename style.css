@@ -33,6 +33,7 @@ nav ul li a{
     padding: 10px;
     text-transform: uppercase;
     margin-left: 30px;
+    text-decoration: none;
 }
 nav ul li a:hover, a.active{
     background-color: #E33741;
@@ -122,3 +123,4 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
