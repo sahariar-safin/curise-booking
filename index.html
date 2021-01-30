@@ -62,7 +62,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id="first-class" value="0" class="inp-style inp-width" type="number" >
+                    <input id="first-class" value="0" class="inp-style inp-width" type="number">
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handelTicket('first', true)" class="btn btn-danger">+</button>
@@ -73,7 +73,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input id="economy-class" value="0" class="inp-style inp-width" type="number" >
+                    <input id="economy-class" value="0" class="inp-style inp-width" type="number">
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handelTicket('economy', true)" class="btn btn-danger">+</button>
@@ -117,6 +117,7 @@
         function handelTicket(type, amount) {
             const ticketInput = document.getElementById(type + "-class");
             const ticketAmount = parseInt(ticketInput.value);
+            let lastAmount = ticketAmount;
 
             if (amount == true) {
                 lastAmount = ticketAmount + 1;
